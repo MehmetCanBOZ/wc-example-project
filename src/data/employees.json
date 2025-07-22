@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "firstName": "Ahmet",
+    "lastName": "Sourtimes",
+    "dateOfEmployment": "2022-09-23",
+    "dateOfBirth": "1990-03-15",
+    "phone": "+(90) 532 123 45 67",
+    "email": "ahmet@sourtimes.org",
+    "department": "Analytics",
+    "position": "Junior"
+  },
+  {
+    "id": 2,
+    "firstName": "Zeynep",
+    "lastName": "Kaya",
+    "dateOfEmployment": "2021-06-12",
+    "dateOfBirth": "1988-07-22",
+    "phone": "+(90) 545 234 56 78",
+    "email": "zeynep.kaya@kaya.com",
+    "department": "Tech",
+    "position": "Senior"
+  },
+  {
+    "id": 3,
+    "firstName": "Mehmet",
+    "lastName": "Özkan",
+    "dateOfEmployment": "2023-01-15",
+    "dateOfBirth": "1992-11-08",
+    "phone": "+(90) 536 345 67 89",
+    "email": "mehmet.ozkan@ozkan.org",
+    "department": "Analytics",
+    "position": "Medior"
+  },
+  {
+    "id": 4,
+    "firstName": "Elif",
+    "lastName": "Demir",
+    "dateOfEmployment": "2020-03-25",
+    "dateOfBirth": "1985-12-03",
+    "phone": "+(90) 533 456 78 90",
+    "email": "elif.demir@demir.com",
+    "department": "Tech",
+    "position": "Senior"
+  },
+  {
+    "id": 5,
+    "firstName": "Can",
+    "lastName": "Yılmaz",
+    "dateOfEmployment": "2023-08-10",
+    "dateOfBirth": "1995-04-18",
+    "phone": "+(90) 532 567 89 01",
+    "email": "can.yilmaz@ymz.org",
+    "department": "Tech",
+    "position": "Junior"
+  },
+  {
+    "id": 6,
+    "firstName": "Selin",
+    "lastName": "Aydın",
+    "dateOfEmployment": "2022-02-14",
+    "dateOfBirth": "1987-09-27",
+    "phone": "+(90) 544 678 90 12",
+    "email": "selin.aydin@aydin.org",
+    "department": "Analytics",
+    "position": "Medior"
+  },
+  {
+    "id": 7,
+    "firstName": "Emre",
+    "lastName": "Şahin",
+    "dateOfEmployment": "2021-11-05",
+    "dateOfBirth": "1989-01-12",
+    "phone": "+(90) 537 789 01 23",
+    "email": "emre.sahin@shn.org",
+    "department": "Tech",
+    "position": "Medior"
+  },
+  {
+    "id": 8,
+    "firstName": "Ayşe",
+    "lastName": "Arslan",
+    "dateOfEmployment": "2020-07-30",
+    "dateOfBirth": "1984-06-09",
+    "phone": "+(90) 535 890 12 34",
+    "email": "ayse.arslan@arslan.net",
+    "department": "Analytics",
+    "position": "Senior"
+  },
+  {
+    "id": 9,
+    "firstName": "Burak",
+    "lastName": "Koç",
+    "dateOfEmployment": "2023-04-18",
+    "dateOfBirth": "1993-10-25",
+    "phone": "+(90) 543 901 23 45",
+    "email": "burak.koc@koc.org",
+    "department": "Tech",
+    "position": "Junior"
+  },
+  {
+    "id": 10,
+    "firstName": "Deniz",
+    "lastName": "Öztürk",
+    "dateOfEmployment": "2022-12-08",
+    "dateOfBirth": "1991-02-17",
+    "phone": "+(90) 538 012 34 56",
+    "email": "deniz.ozturk@ozturk.org",
+    "department": "Analytics",
+    "position": "Medior"
+  },
+  {
+    "id": 11,
+    "firstName": "Fatma",
+    "lastName": "Çelik",
+    "dateOfEmployment": "2021-08-22",
+    "dateOfBirth": "1986-05-14",
+    "phone": "+(90) 542 123 45 67",
+    "email": "fatma.celik@celik.org",
+    "department": "Tech",
+    "position": "Senior"
+  },
+  {
+    "id": 12,
+    "firstName": "Oğuz",
+    "lastName": "Karaca",
+    "dateOfEmployment": "2023-09-30",
+    "dateOfBirth": "1994-08-21",
+    "phone": "+(90) 534 234 56 78",
+    "email": "oguz.karaca@karaca.org",
+    "department": "Analytics",
+    "position": "Junior"
+  },
+  {
+    "id": 13,
+    "firstName": "Tuna",
+    "lastName": "Ersoy",
+    "dateOfEmployment": "2021-01-10",
+    "dateOfBirth": "1990-02-19",
+    "phone": "+(90) 542 234 12 32",
+    "email": "tuna.ersoy@ersoy.org",
+    "department": "HR",
+    "position": "Senior"
+  },
+  {
+    "id": 14,
+    "firstName": "Ebru",
+    "lastName": "Türkmen",
+    "dateOfEmployment": "2020-05-21",
+    "dateOfBirth": "1983-03-07",
+    "phone": "+(90) 533 654 32 12",
+    "email": "ebru.turkmen@turkmen.net",
+    "department": "Marketing",
+    "position": "Senior"
+  },
+  {
+    "id": 15,
+    "firstName": "Levent",
+    "lastName": "Efe",
+    "dateOfEmployment": "2023-02-12",
+    "dateOfBirth": "1991-12-05",
+    "phone": "+(90) 535 432 12 54",
+    "email": "levent.efe@efe.org",
+    "department": "Finance",
+    "position": "Medior"
+  },
+  {
+    "id": 16,
+    "firstName": "Derya",
+    "lastName": "Yıldırım",
+    "dateOfEmployment": "2022-04-10",
+    "dateOfBirth": "1994-06-11",
+    "phone": "+(90) 536 543 65 43",
+    "email": "derya.yildirim@yildirim.net",
+    "department": "Finance",
+    "position": "Junior"
+  },
+  {
+    "id": 17,
+    "firstName": "Barış",
+    "lastName": "Şentürk",
+    "dateOfEmployment": "2023-11-11",
+    "dateOfBirth": "1992-04-05",
+    "phone": "+(90) 539 876 54 21",
+    "email": "baris.senturk@senturk.org",
+    "department": "Marketing",
+    "position": "Senior"
+  },
+  {
+    "id": 18,
+    "firstName": "Furkan",
+    "lastName": "Polat",
+    "dateOfEmployment": "2021-06-03",
+    "dateOfBirth": "1990-01-23",
+    "phone": "+(90) 534 987 65 23",
+    "email": "furkan.polat@polat.org",
+    "department": "Tech",
+    "position": "Junior"
+  },
+  {
+    "id": 19,
+    "firstName": "Gamze",
+    "lastName": "Yavuz",
+    "dateOfEmployment": "2020-02-09",
+    "dateOfBirth": "1985-08-15",
+    "phone": "+(90) 532 678 45 76",
+    "email": "gamze.yavuz@yavuz.org",
+    "department": "Finance",
+    "position": "Medior"
+  },
+  {
+    "id": 20,
+    "firstName": "Onur",
+    "lastName": "Kurt",
+    "dateOfEmployment": "2021-10-22",
+    "dateOfBirth": "1989-09-17",
+    "phone": "+(90) 531 876 98 34",
+    "email": "onur.kurt@kurt.org",
+    "department": "Tech",
+    "position": "Junior"
+  }
+]

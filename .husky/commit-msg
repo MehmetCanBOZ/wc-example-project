@@ -1,0 +1,27 @@
+#!/usr/bin/env sh
+
+# Commit message validation
+commit_regex='^(feat|fix|docs|style|refactor|test|chore)(\(.+\))?: .{1,50}'
+
+if ! grep -qE "$commit_regex" "$1"; then
+    echo "❌ Invalid commit message format!"
+    echo ""
+    echo "📝 Commit message should follow this format:"
+    echo "   <type>(<scope>): <description>"
+    echo ""
+    echo "📋 Types:"
+    echo "   feat:     New feature"
+    echo "   fix:      Bug fix"
+    echo "   docs:     Documentation"
+    echo "   style:    Code style changes"
+    echo "   refactor: Code refactoring"
+    echo "   test:     Adding tests"
+    echo "   chore:    Build/config changes"
+    echo ""
+    echo "✅ Examples:"
+    echo "   feat(employee-list): add grid view"
+    echo "   fix(employee-list): resolve button alignment issue"
+    echo "   docs: update README installation steps"
+    echo ""
+    exit 1
+fi
