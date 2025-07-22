@@ -4,6 +4,7 @@ import { rollupPluginHTML as html } from '@web/rollup-plugin-html';
 import { importMetaAssets } from '@web/rollup-plugin-import-meta-assets';
 import esbuild from 'rollup-plugin-esbuild';
 import { generateSW } from 'rollup-plugin-workbox';
+import copy from 'rollup-plugin-copy';
 
 import path from 'path';
 
@@ -24,6 +25,10 @@ export default {
       minify: true,
       injectServiceWorker: true,
       serviceWorkerPath: 'dist/sw.js',
+    }),
+
+    copy({
+      targets: [{ src: 'src/data/**/*', dest: 'dist/src/data' }],
     }),
     /** Resolve bare module imports */
     nodeResolve(),
