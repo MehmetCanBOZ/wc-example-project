@@ -2,6 +2,10 @@
 
 Built with LitElement JavaScript.
 
+## 🌐 Live Demo
+
+🚀 **[View Live Demo](https://employee-management-pi-sooty.vercel.app/)**
+
 ## 📋 About the Project
 
 This application is a web application that helps HR personnel manage company employee information. Developed using LitElement JavaScript, it offers responsive design and multi-language support.

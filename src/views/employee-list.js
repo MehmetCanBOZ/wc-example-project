@@ -384,7 +384,7 @@ const styles = css`
     color: #666;
   }
 
-  .sr-only {
+  .empty-column-header {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -540,7 +540,7 @@ class EmployeeList extends LitElement {
         <table>
           <thead>
             <tr>
-              <th><span class="sr-only">Select</span></th>
+              <th><span class="empty-column-header">Select</span></th>
               <th>${window.app.store.t('firstName')}</th>
               <th>${window.app.store.t('lastName')}</th>
               <th>${window.app.store.t('dateOfEmployment')}</th>
