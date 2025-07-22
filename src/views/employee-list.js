@@ -444,7 +444,7 @@ class EmployeeList extends LitElement {
     super();
     this.employees = [];
     this.currentLanguage = window.app?.store?.getCurrentLanguage() || 'tr';
-    this.viewMode = 'grid';
+    this.viewMode = 'table';
     this.searchQuery = '';
     this.currentPage = 1;
     this.itemsPerPage = this.viewMode === 'grid' ? 4 : 10;

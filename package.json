@@ -14,6 +14,7 @@
     "storybook": "npm run analyze -- --exclude dist && storybook dev -p 8080",
     "storybook:build": "npm run analyze -- --exclude dist && storybook build",
     "build": "rimraf dist && rollup -c rollup.config.js && npm run analyze -- --exclude dist",
+    "vercel-build": "npm run build",
     "start:build": "web-dev-server --root-dir dist --app-index index.html --open",
     "analyze": "cem analyze --litelement",
     "start": "web-dev-server"
