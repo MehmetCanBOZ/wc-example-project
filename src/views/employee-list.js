@@ -437,6 +437,7 @@ class EmployeeList extends LitElement {
     itemsPerPage: { type: Number },
     showDeleteModal: { type: Boolean },
     employeeToDelete: { type: Object },
+    searchText: { type: String },
   };
 
   static styles = styles;
@@ -451,6 +452,7 @@ class EmployeeList extends LitElement {
     this.itemsPerPage = this.viewMode === 'grid' ? 4 : 10;
     this.showDeleteModal = false;
     this.employeeToDelete = null;
+    this.searchText = '';
 
     if (window.app?.store?.employees) {
       this.employees = window.app.store.employees;
@@ -485,7 +487,9 @@ class EmployeeList extends LitElement {
   };
 
   handleSearch(e) {
-    this.debouncedSearch(sanitizeInput(e.target.value));
+    this.searchText = sanitizeInput(e.target.value);
+
+    this.debouncedSearch(this.searchText);
   }
 
   toggleViewMode(mode) {
@@ -830,6 +834,7 @@ class EmployeeList extends LitElement {
             class="search-box"
             placeholder="Search employees..."
             @input=${this.handleSearch}
+            .value=${this.searchText}
           />
 
           <div class="view-toggle">
