@@ -2,6 +2,11 @@ import { LitElement, html, css } from 'lit';
 import { Router } from '@vaadin/router';
 import { validateForm } from '../utils/validation.js';
 import { positions, formatDateForInput } from '../utils/formatters.js';
+import {
+  sanitizeInput,
+  sanitizeEmail,
+  sanitizePhone,
+} from '../utils/security.js';
 
 const emptyFormData = {
   firstName: '',
@@ -321,9 +326,27 @@ class EmployeeForm extends LitElement {
   }
 
   handleFieldChange(field, value) {
+    let sanitizedValue = value;
+
+    switch (field) {
+      case 'email':
+        sanitizedValue = sanitizeEmail(value);
+        break;
+      case 'phone':
+        sanitizedValue = sanitizePhone(value);
+        break;
+      case 'firstName':
+      case 'lastName':
+      case 'department':
+        sanitizedValue = sanitizeInput(value);
+        break;
+      default:
+        sanitizedValue = value;
+    }
+
     this.formData = {
       ...this.formData,
-      [field]: value,
+      [field]: sanitizedValue,
     };
 
     if (this.errors[field]) {

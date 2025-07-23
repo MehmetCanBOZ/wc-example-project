@@ -1,6 +1,7 @@
 import { LitElement, html, css } from 'lit';
 import { Router } from '@vaadin/router';
 import { formatDate, debounce, paginate } from '../utils/formatters.js';
+import { sanitizeInput } from '../utils/security.js';
 
 const styles = css`
   :host {
@@ -484,7 +485,7 @@ class EmployeeList extends LitElement {
   };
 
   handleSearch(e) {
-    this.debouncedSearch(e.target.value);
+    this.debouncedSearch(sanitizeInput(e.target.value));
   }
 
   toggleViewMode(mode) {

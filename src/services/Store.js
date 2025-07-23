@@ -1,6 +1,11 @@
 /* eslint-disable */
 import { saveToStorage } from '../helper/index.js';
 import { translations } from '../localization/translations.js';
+import {
+  sanitizeInput,
+  sanitizeEmail,
+  sanitizePhone,
+} from '../utils/security.js';
 
 function detectLanguage() {
   const htmlLang = document.documentElement.getAttribute('lang');
@@ -41,9 +46,22 @@ const Store = {
     return this.language;
   },
 
-  addEmployee(employeeData) {
-    const newEmployee = {
+  sanitizeEmployeeData(employeeData) {
+    return {
       ...employeeData,
+      firstName: sanitizeInput(employeeData.firstName || ''),
+      lastName: sanitizeInput(employeeData.lastName || ''),
+      email: sanitizeEmail(employeeData.email || ''),
+      phone: sanitizePhone(employeeData.phone || ''),
+      department: sanitizeInput(employeeData.department || ''),
+      position: sanitizeInput(employeeData.position || ''),
+    };
+  },
+
+  addEmployee(employeeData) {
+    const sanitizedData = this.sanitizeEmployeeData(employeeData);
+    const newEmployee = {
+      ...sanitizedData,
       id: Math.max(0, ...this.employees.map(e => e.id)) + 1,
     };
     this.employees = [...this.employees, newEmployee];
@@ -53,7 +71,10 @@ const Store = {
   updateEmployee(id, employeeData) {
     const index = this.employees.findIndex(emp => emp.id === parseInt(id, 10));
     if (index !== -1) {
-      const updatedEmployee = { ...employeeData, id: parseInt(id, 10) };
+      const updatedEmployee = {
+        ...this.sanitizeEmployeeData(employeeData),
+        id: parseInt(id, 10),
+      };
       this.employees = [
         ...this.employees.slice(0, index),
         updatedEmployee,
